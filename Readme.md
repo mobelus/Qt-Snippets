@@ -1,4 +1,16 @@
 
+для отладки же можно метаинфу
+
+```
+template<typename EnumType>
+inline auto qtEnumToString(const EnumType value)
+{
+    return QMetaEnum::fromType<EnumType>().valueToKey(static_cast<int>(value));
+}
+```
+
+для отладки же можно метаинфу
+
 ```
 class MainWindow : public QMainWindow { 
   //...
